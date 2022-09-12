@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pri">
+        <h1>Temperature Converter</h1>
+        
+        <form id="tempCel" onsubmit="calculateTemp();return false">
+            <label>Enter Temperature</label>
+            <input type="number" name="temp" id="temp" class="input">
+            <select name="temp_change" id ="temp_change" class="option">
+                <option value="cel">ºC</option>
+                <option value="fah">ºF</option>
+            </select>
+            <input type="submit" name="temp" class="button" value="Convert"><br/>
+            <label>Converted Temperature</label>
+        <span id="resultContainer" class="output"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
